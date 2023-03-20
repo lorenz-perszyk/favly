@@ -1,0 +1,88 @@
+:root {
+  --favly-main: #e54d1a;
+  --favly-light: #fdf1ed;
+  --favly-dark: #250c04;
+}
+
+/* H O V E R  -  U N D E R L I N E */
+/* =============================== */
+.hover-underline {
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: var(--favly-main);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* H O V E R  -  F I L L   B U T T O N */
+/* =================================== */
+.button-filled {
+  height: 48px;
+  width: 100%;
+  background-color: var(--favly-main);
+  color: var(--favly-light);
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-width: 1px;
+  border-radius: 4px;
+  transition: background-color 200ms;
+}
+
+.button-filled:hover {
+  background-color: #b73d15;
+}
+
+
+/* H O V E R  -  F I L L   B U T T O N */
+/* =================================== */
+.button-outline {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  height: 48px;
+  width: 100%;
+  background-color: var(--favly-light);
+  border-color: var(--favly-main);
+  letter-spacing: 0.05rem;
+  border-width: 1px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 300ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.button-outline:hover {
+    color: var(--favly-light)
+}
+
+.button-outline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0;
+  background-color: var(--favly-main);
+  transition: height 300ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.button-outline:hover::after {
+  height: 100%;
+}

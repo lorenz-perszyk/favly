@@ -1,0 +1,44 @@
+/* sora-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sora'),
+       url('/src/assets/fonts/sora-latin-regular.woff2') format('woff2'),
+       url('/src/assets/fonts/sora-latin-regular.woff') format('woff'); 
+}
+
+/* sora-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Sora'),
+       url('/src/assets/fonts/sora-latin-500.woff2') format('woff2'), 
+       url('/src/assets/fonts/sora-latin-500.woff') format('woff'); 
+}
+
+/* sora-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Sora'),
+       url('/src/assets/fonts/sora-latin-600.woff2') format('woff2'), 
+       url('/src/assets/fonts/sora-latin-600.woff') format('woff'); 
+}
+
+/* sora-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sora'),
+       url('/src/assets/fonts/sora-latin-700.woff2') format('woff2'), 
+       url('/src/assets/fonts/sora-latin-700.woff') format('woff'); 
+}
+
