@@ -1,8 +1,9 @@
-import React, { createContext } from "react";
-import { useState } from "react";
+// I M P O R T S
+import React, { createContext, useState } from "react";
 
 const TransitionContext = createContext({ completed: false });
 
+// C O M P O N E N T
 export const TransitionProvider = ({ children }) => {
 	const [completed, setCompleted] = useState(false);
 

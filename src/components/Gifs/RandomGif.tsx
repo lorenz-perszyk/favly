@@ -1,5 +1,5 @@
 // I M P O R T S
-import React, { FC, useRef, useEffect } from "react";
+import React, { FC } from "react";
 import { Transition, SwitchTransition } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
 import gsap from "gsap";
@@ -8,7 +8,7 @@ import LottieStar from "./LottieStar";
 import useSearchStore from "../../stores/searchStore";
 
 // C O M P O N E N T
-const GeneralGif: FC = () => {
+const RandomGif: FC = () => {
   const searchResults = useSearchStore((state) => state.searchResults);
 
   // Image Enter Animation
@@ -39,7 +39,6 @@ const GeneralGif: FC = () => {
       {searchResults.map((gif) => (
         <SwitchTransition mode={"out-in"}>
           <Transition
-
             mountOnEnter
             unmountOnExit
             key={uuidv4()}
@@ -58,4 +57,4 @@ const GeneralGif: FC = () => {
   );
 };
 
-export default GeneralGif;
+export default RandomGif;

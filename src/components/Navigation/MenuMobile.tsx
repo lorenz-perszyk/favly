@@ -37,7 +37,7 @@ const Menu: FC = () => {
       }}
     >
       <div ref={menuRef}>
-        <div
+        <nav
           className="fixed z-50 w-full right-0 bottom-0 h-[calc(100vh-48px)] px-4 pt-20 bg-favly-dark text-favly-light"
           id="menu"
         >
@@ -57,7 +57,7 @@ const Menu: FC = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </div>
     </Transition>
   );

@@ -5,9 +5,11 @@ import RandomGif from "../Gifs/RandomGif";
 
 // C O M P O N E N T
 const RandomResults: FC = () => {
+  const clearResults = useSearchStore((state) => state.clearResults);
   const randomSearch = useSearchStore((state) => state.randomSearch);
 
   useEffect(() => {
+    clearResults();
     randomSearch();
   }, []);
 

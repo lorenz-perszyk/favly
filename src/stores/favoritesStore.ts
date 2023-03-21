@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { devtools, persist } from "zustand/middleware";
+import { persist } from "zustand/middleware";
 
 interface FavoritesState {
   favorites: Array<any>;
@@ -8,17 +8,16 @@ interface FavoritesState {
 }
 
 const useFavoriteStore = create<FavoritesState>()(
-  devtools(
-    persist(
-      (set) => ({
-        favorites: [],
-        addToFavorites: (gif) => set((state) => ({ favorites: [...state.favorites, gif] })),
-        removeFromFavorites: (id) => set((state) => ({ favorites: state.favorites.filter(favorite => favorite.id !== id) }))
-      }),
-      {
-        name: "favorites-storage",
-      }
-    )
+  persist(
+    (set) => ({
+      favorites: [],
+      addToFavorites: (gif) => set((state) => ({ favorites: [...state.favorites, gif] })),
+      removeFromFavorites: (id) =>
+        set((state) => ({ favorites: state.favorites.filter((favorite) => favorite.id !== id) })),
+    }),
+    {
+      name: "favorites-storage",
+    }
   )
 );
 

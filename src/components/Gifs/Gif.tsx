@@ -9,7 +9,7 @@ interface GifProps {
 const Gif: FC<GifProps> = ({ gif }) => {
   return (
     <img
-      className="gif-image w-full rounded bg-favly-main bg-opacity-20 min-h-[200px]"
+      className="gif-image w-full rounded bg-favly-main bg-opacity-20 min-h-[180px] max-h-[500px]"
       src={gif.images.downsized_medium.url}
       alt={gif.title}
     />

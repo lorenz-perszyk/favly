@@ -1,8 +1,6 @@
 // I M P O R T S
-import React, { FC, useLayoutEffect, useState, useRef } from "react";
+import React, { FC } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import GeneralGif from "../Gifs/GeneralGif";
-import FavoriteGif from "../Gifs/FavoriteGif";
 import useFavoriteStore from "../../stores/favoritesStore";
 import useSearchStore from "../../stores/searchStore";
 import Gif from "../Gifs/Gif";
@@ -20,8 +18,8 @@ const ImageGrid: FC<ImageGridProps> = ({ arrayName }) => {
   const searchResults = useSearchStore((state) => state.searchResults);
 
   return (
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 600: 2, 1024: 3, 1440: 4 }}>
-        <Masonry columnsCount={1} gutter="16px">
+      <ResponsiveMasonry columnsCountBreakPoints={{ 320: 1, 600: 2, 1024: 3, 1440: 4 }}>
+        <Masonry gutter="16px">
           {arrayName === "general"
             ? searchResults.map((gif, i) => (
                 <div className="gif relative w-full block" key={i}>
@@ -46,5 +44,3 @@ const ImageGrid: FC<ImageGridProps> = ({ arrayName }) => {
 };
 
 export default ImageGrid;
-
-// {arrayName === "general" ? <GeneralGif /> : <FavoriteGif />}

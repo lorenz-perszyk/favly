@@ -47,7 +47,6 @@
   background-color: #b73d15;
 }
 
-
 /* H O V E R  -  F I L L   B U T T O N */
 /* =================================== */
 .button-outline {
@@ -68,7 +67,7 @@
 }
 
 .button-outline:hover {
-    color: var(--favly-light)
+  color: var(--favly-light);
 }
 
 .button-outline::after {
@@ -85,4 +84,8 @@
 
 .button-outline:hover::after {
   height: 100%;
+}
+
+.button-outline:active::after {
+  background-color: #b73d15;
 }

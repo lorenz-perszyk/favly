@@ -2,7 +2,7 @@
 // I M P O R T S
 import React, { FC, useRef, useEffect } from "react";
 import Lottie from "lottie-react";
-import StarAnimation from "../../assets/media/favly_star .json";
+import StarAnimation from "../../assets/media/favly_star.json";
 import useFavoriteStore from "../../stores/favoritesStore";
 import useSearchStore from "../../stores/searchStore";
 
@@ -34,7 +34,7 @@ const LottieStar: FC<StarButtonProps> = ({ gif }) => {
   return (
     <button
       className={
-        "absolute top-4 right-4 w-10 h-10 flex justify-center bg-favly-light rounded-full transition duration-200 hover:scale-110"
+        "absolute top-4 right-4 w-10 h-10 flex justify-center items-center bg-favly-light rounded-full transition duration-200 hover:scale-110"
       }
       onClick={() => {
         handleClick(gif);

@@ -4,7 +4,6 @@ import gsap from "gsap";
 import Flip from "gsap/Flip";
 import useFavoriteStore from "../../stores/favoritesStore";
 import ImageGrid from "../Grid/ImageGrid";
-import MasonryGrid from "../Grid/MasonryGrid";
 gsap.registerPlugin(Flip);
 
 // C O M P O N E N T

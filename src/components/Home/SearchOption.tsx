@@ -1,4 +1,5 @@
 // I M P O R T S
+import { link } from "fs";
 import React, { FC } from "react";
 import { NavLink } from "react-router-dom";
 import useSearchStore from "../../stores/searchStore";
@@ -23,13 +24,13 @@ const SearchOption: FC = () => {
     },
     {
       title: "What's Trending",
-      text: "Don’t want to feel left out when your hanging out with your friends? Check out what’s trending right now.",
+      text: "Don’t want to feel left out when you’re hanging out with your friends? Check out what’s trending right now.",
       buttonText: "Trending",
       link: "/trending",
     },
     {
       title: "Feeling Lucky",
-      text: "Not feeling particular? Then give our random option a try and rediscover old favorites or find new ones.",
+      text: "The adventurous type? Then give our random option a try and rediscover old favorites or find new ones.",
       buttonText: "Random GIF",
       link: "/random",
     },

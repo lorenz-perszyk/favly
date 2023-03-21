@@ -1,9 +1,11 @@
+// I M P O R T S
 import React, { useContext } from "react";
 import { SwitchTransition, Transition } from "react-transition-group";
 import { useLocation } from "react-router-dom";
 import gsap from "gsap";
 import TransitionContext from "./TransitionContext";
 
+// C O M P O N E N T
 const TransitionComponent = ({ children }) => {
   const location = useLocation();
   const { toggleCompleted } = useContext(TransitionContext);
