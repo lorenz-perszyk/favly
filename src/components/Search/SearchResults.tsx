@@ -2,7 +2,7 @@
 import React, { FC, useState, useEffect } from "react";
 import UpButton from "../Buttons/UpButton";
 import useSearchStore from "../../stores/searchStore";
-import ImageGrid from "../Grid/ImageGrid";
+import SearchResultsGrid from "../Grid/SearchResultsGrid";
 
 // C O M P O N E N T
 const SearchResults: FC = () => {
@@ -26,7 +26,6 @@ const SearchResults: FC = () => {
   return (
     <>
       <form className="flex flex-col gap-4 mb-12 sm:flex-row" onSubmit={handleSubmit}>
-        <label htmlFor="searchInput"></label>
         <input
           className="h-12 border border-favly-light border-b-favly-dark uppercase font-[600] text-2xl bg-favly-light focus:outline-none flex-grow"
           id="searchInput"
@@ -41,7 +40,7 @@ const SearchResults: FC = () => {
           Search
         </button>
       </form>
-      <ImageGrid arrayName="general" />
+      <SearchResultsGrid />
       {noResults ? <h3>Sorry, We couldn't find anything. Please try again!</h3> : null}
       {searchResults.length > 0 && hasMore ? (
         <div className="flex flex-row gap-4 mt-4">

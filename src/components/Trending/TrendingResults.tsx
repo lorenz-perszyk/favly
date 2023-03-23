@@ -2,7 +2,7 @@
 import React, { FC, useEffect } from "react";
 import UpButton from "../Buttons/UpButton";
 import useSearchStore from "../../stores/searchStore";
-import ImageGrid from "../Grid/ImageGrid";
+import SearchResultsGrid from "../Grid/SearchResultsGrid";
 
 // C O M P O N E N T
 const TrendingResults: FC = () => {
@@ -19,7 +19,7 @@ const TrendingResults: FC = () => {
   return (
     <>
       <h1 className="mb-8 font-[600] uppercase">Trending</h1>
-      <ImageGrid arrayName="general" />
+      <SearchResultsGrid />
       {results.length && hasMore ? (
         <div className="flex flex-row gap-2 mt-4">
           <UpButton />
