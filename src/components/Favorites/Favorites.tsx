@@ -9,7 +9,7 @@ const Favorites: FC = () => {
   const removeFromFavorites = useFavoriteStore((state) => state.removeFromFavorites);
 
   return (
-    <div>
+    <div className="pt-28">
       <h1 className="mb-8 font-[600] uppercase">Favorites</h1>
       {!favorites.length && <h3>Looks kind of empty here ...</h3>}
       <FavoritesGrid />

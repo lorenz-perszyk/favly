@@ -17,7 +17,7 @@ const TrendingResults: FC = () => {
   }, []);
 
   return (
-    <>
+    <div className="pt-28">
       <h1 className="mb-8 font-[600] uppercase">Trending</h1>
       <SearchResultsGrid />
       {results.length && hasMore ? (
@@ -28,7 +28,7 @@ const TrendingResults: FC = () => {
           </button>
         </div>
       ) : null}
-    </>
+    </div>
   );
 };
 

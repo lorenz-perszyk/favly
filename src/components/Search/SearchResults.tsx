@@ -24,7 +24,7 @@ const SearchResults: FC = () => {
   };
 
   return (
-    <>
+    <div className="pt-28">
       <form className="flex flex-col gap-4 mb-12 sm:flex-row" onSubmit={handleSubmit}>
         <input
           className="h-12 border border-favly-light border-b-favly-dark uppercase font-[600] text-2xl bg-favly-light focus:outline-none flex-grow"
@@ -50,7 +50,7 @@ const SearchResults: FC = () => {
           </button>
         </div>
       ) : null}
-    </>
+    </div>
   );
 };
 

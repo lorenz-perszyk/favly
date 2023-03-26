@@ -24,7 +24,7 @@ const NavBar: FC = () => {
   }, [showMenu]);
 
   return (
-    <div className="flex flex-row items-center justify-between h-12 mb-20">
+    <div className="fixed top-0 left-0 z-50 w-full flex flex-row items-center justify-between h-12 bg-favly-light px-2 sm:px-4 lg:px-12 xl:px-[10vw]">
       <div className="font-bold text-2xl text-favly-main">
         <NavLink
           to="/"

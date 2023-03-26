@@ -14,7 +14,7 @@ const RandomResults: FC = () => {
   }, []);
 
   return (
-    <>
+    <div className="pt-28">
       <h1 className="mb-2 font-[600] uppercase">Random</h1>
       <button className="button-filled mb-8" onClick={randomSearch}>
         Roll the Dice{" "}
@@ -22,7 +22,7 @@ const RandomResults: FC = () => {
       <div className="flex justify-center">
         <RandomGif />
       </div>
-    </>
+    </div>
   );
 };
 

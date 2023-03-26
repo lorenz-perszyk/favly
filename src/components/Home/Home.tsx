@@ -5,7 +5,7 @@ import SearchOption from "./SearchOption";
 // C O M P O N E N T
 const Home: FC = () => {
   return (
-    <div className="flex flex-col gap-20 md:flex-row md:gap-8 lg:flex-col lg:gap-20">
+    <div className="flex flex-col gap-20 pt-28 md:flex-row md:gap-8 lg:flex-col lg:gap-20">
       <div className="max-w-[700px] flex-1">
         <h1 className="mb-6 text-4xl">
           Welcome to <strong>Favly!</strong>
